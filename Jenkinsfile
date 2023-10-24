@@ -83,7 +83,7 @@
 
     stage('Update-Deployment-File') {
         environment {
-            GIT_REPO_NAME = "Jenkins-Zero-To-Hero"
+            GIT_REPO_NAME = "2branches"
             GIT_USER_NAME = "Haykelyazidi"
         }
         steps {
