@@ -16,8 +16,10 @@
      
     stage('Checkout') {
       steps {
-        sh 'echo passed'
-        git branch: 'main', url: 'https://github.com/Haykelyazidi/2branches'
+        cleanWs()
+        checkout scm
+       // sh 'echo passed'
+       // git branch: 'main', url: 'https://github.com/Haykelyazidi/2branches'
       }
     }
     stage('Build and Test') {
