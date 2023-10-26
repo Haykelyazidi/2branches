@@ -8,9 +8,8 @@ spec:
     http:
       paths:
       - path: /haykel
-        pathType: Prefix
         backend:
           service:
-            name: spring-boot-app-service
+            name: hayhay
             port:
-              number: 80
+              number: 8085
