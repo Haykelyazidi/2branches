@@ -7,10 +7,10 @@ spec:
   - host: "devopstn.com"
     http:
       paths:
-      - path: /
+      - path: /haykel
         pathType: Prefix
         backend:
           service:
-            name: hayhay
+            name: spring-boot-app-service
             port:
               number: 80
