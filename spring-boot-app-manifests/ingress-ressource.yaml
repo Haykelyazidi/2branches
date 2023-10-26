@@ -5,12 +5,13 @@ metadata:
   name: example-ingress
 spec:
   rules:
-    - host: "devopstn.com"
-  http:
-    paths:
+  - host: "devopstn.com"
+    http:
+      paths:
       
-    path: /haykel
-    backend:
-      service:
-        name: servicenew
-        port: number:3333
+        path: /haykel
+        backend:
+          service:
+            name: servicenew
+            port: 
+              number:3333
