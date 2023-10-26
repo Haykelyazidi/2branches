@@ -4,9 +4,9 @@ metadata:
   name: hayhay
 spec:
   ports:
-  type: ClusterIP
+  
   ports:
-  - name: http
+  
     port: 80
     targetPort: 8080
     protocol: TCP
