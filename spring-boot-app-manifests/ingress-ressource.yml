@@ -8,8 +8,12 @@ spec:
   
   rules:
   - host: devopstn.com
-    backend:
-      service:
-        name: servicenew
-        port:
-          number: 8085
+    http:
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+          service:
+            name: servicenew
+            port:
+              number: 8085
