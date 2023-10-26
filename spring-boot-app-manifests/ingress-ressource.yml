@@ -7,7 +7,7 @@ spec:
   - host: "devopstn.com"
     http:
       paths:
-      - path: /haykel
+      - path: /
         pathType: Prefix
         backend:
           service:
