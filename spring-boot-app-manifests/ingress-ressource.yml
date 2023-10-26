@@ -8,6 +8,7 @@ spec:
     http:
       paths:
       - path: /haykel
+        pathType: ImplementationSpecific
         backend:
           service:
             name: hayhay
