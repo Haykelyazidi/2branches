@@ -11,6 +11,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: servicenew
+            name: spring-boot-app-service
             port:
               number: 3333
