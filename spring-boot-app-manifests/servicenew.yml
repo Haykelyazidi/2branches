@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: hayhay
 spec:
+  type: ClusterIP
   ports:
-  
-  ports:
-  
+  - name: http
     port: 80
     targetPort: 8080
     protocol: TCP
