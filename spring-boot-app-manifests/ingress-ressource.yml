@@ -11,6 +11,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: servicenew
+            name: hayhay
             port:
               number: 8085
