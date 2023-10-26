@@ -8,7 +8,6 @@ spec:
   - host: "devopstn.com"
     http:
       paths:
-      
         path: /haykel
         backend:
           service:
