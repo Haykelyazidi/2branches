@@ -2,19 +2,14 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: example-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+  
 
 spec:
-  ingressClassName: nginx-example
+  
   rules:
   - host: devopstn.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: servicenew
-            port:
-              number: 8085
+    backend:
+      service:
+        name: servicenew
+        port:
+          number: 8085
