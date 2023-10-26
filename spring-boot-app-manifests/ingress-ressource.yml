@@ -2,18 +2,15 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: example-ingress
-  
-
 spec:
-  
   rules:
-  - host: devopstn.com
+  - host: "devopstn.com"
     http:
       paths:
-        - path: /
-          pathType: Prefix
-          backend:
+      - path: /haykel
+        pathType: Prefix
+        backend:
           service:
             name: servicenew
             port:
-              number: 8085
+              number: 3333
