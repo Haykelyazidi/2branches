@@ -11,6 +11,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: spring-boot-app-service
+            name: hayhay
             port:
               number: 3333
