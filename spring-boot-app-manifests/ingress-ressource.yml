@@ -4,7 +4,7 @@ metadata:
   name: example-ingress
 spec:
   rules:
-  - host: www.devopstn.com
+  - host: devopstn.com
     http:
       paths:
       - path: /
