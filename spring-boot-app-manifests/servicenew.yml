@@ -10,3 +10,7 @@ spec:
     protocol: TCP
   selector:
     app: spring-hay
+status:
+  loadBalancer:
+    ingress:
+    - ip: 92.168.124.33 
