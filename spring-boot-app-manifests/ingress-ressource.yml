@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: hh-ingress
 spec:
+  ingressClassName: nginx
   rules:
   - host: devopstn.com
     http:
