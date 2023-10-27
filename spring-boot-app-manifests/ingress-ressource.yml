@@ -4,7 +4,7 @@ metadata:
   name: hh-ingress
 spec:
   rules:
-  - host: 'http://devopstn.com'
+  - host: "http://devopstn.com"
     http:
       paths:
       - path: /
