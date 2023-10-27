@@ -13,4 +13,4 @@ spec:
           service:
             name: hayhay
             port:
-              number: 8085
+              number: 80
