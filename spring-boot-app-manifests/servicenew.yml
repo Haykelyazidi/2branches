@@ -4,11 +4,11 @@ metadata:
   name: hayhay
 spec:
   ports:
-  
-    port: 80
-    targetPort: 808
-    protocol: TCP
-    nodeport: 30080
+    - protocol: TCP
+      port: 80
+      targetPort: 808
+    
+      nodeport: 30080
   selector:
     app: spring-hay
   type: NodePort
