@@ -10,7 +10,5 @@ spec:
     protocol: TCP
   selector:
     app: spring-hay
-status:
-  loadBalancer:
-    ingress:
+
     
