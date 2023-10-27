@@ -7,7 +7,7 @@ spec:
   - host: devopstn.com
     http:
       paths:
-      - path:
+      - path: /
         pathType: Prefix
         backend:
           service:
