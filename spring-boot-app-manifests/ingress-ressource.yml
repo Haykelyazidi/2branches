@@ -16,3 +16,7 @@ spec:
             name: spring-boot-app-service
             port:
               number: 80
+status:
+  loadBalancer:
+    ingress:
+    - ip: 10.254.254.4
