@@ -1,13 +1,18 @@
-ingress:
-  enabled: true
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: spring-boot-app-ingress
   annotations:
-    # Add any annotations you need for your Ingress controller
     nginx.ingress.kubernetes.io/rewrite-target: /
-  hosts:
-    - host: devopstn.com
+spec:
+  rules:
+  - host: devopstn.com # Replace with your domain or IP address
+    http:
       paths:
-        - /
-  pathType: Prefix
-  service:
-    name: spring-boot-app-service
-    port: 80
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: spring-boot-app-service
+            port:
+              number: 80
