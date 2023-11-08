@@ -1,1 +1,15 @@
 
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ing-hay
+  namespace: default
+spec:
+  rules:
+  - host: devops.com
+    paths:
+    - path: /*
+      backend:
+        service:
+          name: spring-boot-app-service
+          port: 80
