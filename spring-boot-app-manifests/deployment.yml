@@ -18,4 +18,4 @@ spec:
       - name: spring-hay
         image: haydevops/hay2665:3
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
