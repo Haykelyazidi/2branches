@@ -1,15 +1,19 @@
-
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ing-hay
+  name: spring-hay
   namespace: haykel
+  
 spec:
+  ingressClassName: nginx
   rules:
-  - host: devops.com
-    paths:
-    - path: /*
-      backend:
-        service:
-          name: spring-boot-app-service
-          port: 80
+  - host: devopstn.com
+    http:
+      paths: 
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: spring-boot-app-service
+            port:
+              number: 80
