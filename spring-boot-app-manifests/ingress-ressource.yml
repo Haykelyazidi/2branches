@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: devopstn.com
+  - host: http://devopstn.com
     http:
       paths: 
       - path: /
