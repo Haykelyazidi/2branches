@@ -12,7 +12,4 @@ spec:
   selector:
     app: spring-hay
   type: LoadBalancer
-status:
-  loadBalancer:
-    ingress:
-    - ip: 51.91.204.153
+
