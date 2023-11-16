@@ -4,8 +4,7 @@ metadata:
   name: spring-hay
   namespace: haykel
   annotations:
-    annotations:
-        haproxy.org/path-rewrite: "/"
+    haproxy.org/path-rewrite: "/"
   
 spec:
   
