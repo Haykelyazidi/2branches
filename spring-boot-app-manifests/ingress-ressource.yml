@@ -5,7 +5,7 @@ metadata:
   namespace: haykel
   
 spec:
-  ingressClassName: nginx
+  ingressClassName: haproxy
   rules:
   - host: devopstn.tn
     http:
