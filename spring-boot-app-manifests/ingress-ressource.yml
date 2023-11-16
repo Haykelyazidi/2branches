@@ -4,7 +4,7 @@ metadata:
   name: spring-hay
   namespace: haykel
   annotations:
-      ingress.class: "haproxy"
+      ingress.class: haproxy
   
 spec:
   
