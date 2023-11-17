@@ -4,18 +4,18 @@ metadata:
   name: spring-hay
   namespace: haykel
   annotations:
-    haproxy.org/path-rewrite: "/"
-  
+        haproxy.org/path-rewrite: "/"
 spec:
   
   rules:
-  - host: devopstn.tn
+  - host: devopstn.com
     http:
       paths: 
-      - path: /
+      - path: /hay
         pathType: Prefix
         backend:
           service:
             name: spring-boot-app-service
             port:
               number: 80
+  
